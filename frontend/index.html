@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Beauty Glam - Tienda de Maquillaje</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Beauty Glam - Tienda de maquillaje con los productos más tops." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      html { scroll-behavior: smooth; }
+      body { font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji'; }
+    </style>
+  </head>
+  <body class="bg-rose-50 text-slate-700">
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/90 border-b border-rose-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <a href="#inicio" class="flex items-center gap-2">
+            <span class="inline-flex h-8 w-8 items-center justify-center rounded-md bg-gradient-to-tr from-rose-300 via-pink-300 to-violet-300 text-white font-semibold shadow-sm">BG</span>
+            <span class="text-xl font-semibold bg-gradient-to-r from-rose-500 via-pink-500 to-violet-500 bg-clip-text text-transparent">Beauty Glam</span>
+          </a>
+
+          <button id="menuBtn" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-rose-600 hover:bg-rose-100 focus:outline-none focus:ring-2 focus:ring-rose-400" aria-controls="primary-nav" aria-expanded="false">
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+
+          <nav id="primary-nav" class="hidden md:flex items-center gap-6 text-sm font-medium">
+            <a href="#inicio" class="text-slate-700 hover:text-rose-600">Inicio</a>
+            <a href="#productos" class="text-slate-700 hover:text-rose-600">Productos</a>
+            <a href="#contacto" class="text-slate-700 hover:text-rose-600">Contacto</a>
+          </nav>
+        </div>
+        <nav id="mobile-nav" class="md:hidden hidden py-3 border-t border-rose-100">
+          <div class="flex flex-col gap-3">
+            <a href="#inicio" class="px-2 py-1 rounded hover:bg-rose-100">Inicio</a>
+            <a href="#productos" class="px-2 py-1 rounded hover:bg-rose-100">Productos</a>
+            <a href="#contacto" class="px-2 py-1 rounded hover:bg-rose-100">Contacto</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero / Intro -->
+    <section id="inicio" class="relative overflow-hidden">
+      <div class="absolute inset-0 -z-10 opacity-30 bg-[radial-gradient(1200px_600px_at_50%_-10%,rgba(244,114,182,0.35),transparent_70%)]"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <h1 class="text-3xl sm:text-5xl font-semibold leading-tight">
+              Brilla con estilo
+              <span class="block bg-gradient-to-r from-rose-500 via-pink-500 to-violet-500 bg-clip-text text-transparent">Beauty Glam</span>
+            </h1>
+            <p class="mt-4 text-slate-600 max-w-prose">Descubre nuestra selección de maquillaje con tonos suaves y fórmulas de alta calidad. Todo lo que necesitas para un look perfecto, moderno y femenino.</p>
+            <div class="mt-6">
+              <a href="#productos" class="inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-rose-500 to-violet-500 px-5 py-3 text-white font-medium shadow-sm hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-rose-300">Ver productos</a>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="absolute -top-6 -left-6 h-32 w-32 rounded-full bg-rose-200 blur-2xl opacity-50"></div>
+            <img src="https://images.unsplash.com/photo-1512203492609-8f7f06f1f1c4?q=80&w=1200&auto=format&fit=crop" alt="Colección de maquillaje" class="relative rounded-2xl shadow-lg ring-1 ring-rose-100" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Productos -->
+    <section id="productos" class="py-14 sm:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-end justify-between gap-4 mb-8">
+          <h2 class="text-2xl sm:text-3xl font-semibold text-slate-800">Productos destacados</h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Producto 1 -->
+          <article class="bg-white rounded-2xl shadow-sm ring-1 ring-rose-100 overflow-hidden flex flex-col">
+            <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e69d6?q=80&w=1200&auto=format&fit=crop" alt="Paleta de sombras rosadas" class="h-48 w-full object-cover" />
+            <div class="p-5 flex-1 flex flex-col">
+              <h3 class="font-semibold text-slate-800">Paleta de Sombras Rosé</h3>
+              <p class="mt-1 text-sm text-slate-600">Tonos suaves y pigmentados para looks románticos.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-rose-600 font-semibold">$18.99</span>
+                <button class="rounded-md bg-rose-500 px-4 py-2 text-white text-sm font-medium hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-rose-300">Agregar al carrito</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Producto 2 -->
+          <article class="bg-white rounded-2xl shadow-sm ring-1 ring-rose-100 overflow-hidden flex flex-col">
+            <img src="https://images.unsplash.com/photo-1556228209-73eb9d64b542?q=80&w=1200&auto=format&fit=crop" alt="Labial tono nude" class="h-48 w-full object-cover" />
+            <div class="p-5 flex-1 flex flex-col">
+              <h3 class="font-semibold text-slate-800">Labial Velvet Nude</h3>
+              <p class="mt-1 text-sm text-slate-600">Acabado suave, hidratante y de larga duración.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-rose-600 font-semibold">$12.50</span>
+                <button class="rounded-md bg-rose-500 px-4 py-2 text-white text-sm font-medium hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-rose-300">Agregar al carrito</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Producto 3 -->
+          <article class="bg-white rounded-2xl shadow-sm ring-1 ring-rose-100 overflow-hidden flex flex-col">
+            <img src="https://images.unsplash.com/photo-1602867741746-c0e1839a96f3?q=80&w=1200&auto=format&fit=crop" alt="Iluminador en polvo" class="h-48 w-full object-cover" />
+            <div class="p-5 flex-1 flex flex-col">
+              <h3 class="font-semibold text-slate-800">Iluminador Glow Pearl</h3>
+              <p class="mt-1 text-sm text-slate-600">Brillo sutil para un efecto de piel radiante.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-rose-600 font-semibold">$15.90</span>
+                <button class="rounded-md bg-rose-500 px-4 py-2 text-white text-sm font-medium hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-rose-300">Agregar al carrito</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Producto 4 -->
+          <article class="bg-white rounded-2xl shadow-sm ring-1 ring-rose-100 overflow-hidden flex flex-col">
+            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=1200&auto=format&fit=crop" alt="Rubor en crema" class="h-48 w-full object-cover" />
+            <div class="p-5 flex-1 flex flex-col">
+              <h3 class="font-semibold text-slate-800">Rubor Creamy Blush</h3>
+              <p class="mt-1 text-sm text-slate-600">Textura cremosa para un acabado natural y fresco.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-rose-600 font-semibold">$11.20</span>
+                <button class="rounded-md bg-rose-500 px-4 py-2 text-white text-sm font-medium hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-rose-300">Agregar al carrito</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Producto 5 -->
+          <article class="bg-white rounded-2xl shadow-sm ring-1 ring-rose-100 overflow-hidden flex flex-col">
+            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=1200&auto=format&fit=crop" alt="Máscara de pestañas" class="h-48 w-full object-cover" />
+            <div class="p-5 flex-1 flex flex-col">
+              <h3 class="font-semibold text-slate-800">Máscara Volume Lift</h3>
+              <p class="mt-1 text-sm text-slate-600">Máximo volumen sin grumos y de larga duración.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-rose-600 font-semibold">$13.75</span>
+                <button class="rounded-md bg-rose-500 px-4 py-2 text-white text-sm font-medium hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-rose-300">Agregar al carrito</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Producto 6 -->
+          <article class="bg-white rounded-2xl shadow-sm ring-1 ring-rose-100 overflow-hidden flex flex-col">
+            <img src="https://images.unsplash.com/photo-1599689019338-2075b6b3609f?q=80&w=1200&auto=format&fit=crop" alt="Base líquida" class="h-48 w-full object-cover" />
+            <div class="p-5 flex-1 flex flex-col">
+              <h3 class="font-semibold text-slate-800">Base Liquid Silk</h3>
+              <p class="mt-1 text-sm text-slate-600">Cobertura media con efecto segunda piel.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-rose-600 font-semibold">$19.40</span>
+                <button class="rounded-md bg-rose-500 px-4 py-2 text-white text-sm font-medium hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-rose-300">Agregar al carrito</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-14 sm:py-20 bg-gradient-to-b from-rose-50 to-violet-50">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl sm:text-3xl font-semibold text-slate-800">Contacto</h2>
+        <p class="mt-2 text-slate-600">¿Tienes dudas o comentarios? Envíanos un mensaje.</p>
+        <form class="mt-8 grid grid-cols-1 gap-6">
+          <div>
+            <label for="nombre" class="block text-sm font-medium text-slate-700">Nombre</label>
+            <input id="nombre" name="nombre" type="text" required class="mt-2 block w-full rounded-lg border border-rose-200 bg-white px-4 py-2.5 shadow-sm focus:border-rose-400 focus:ring-rose-400" placeholder="Tu nombre" />
+          </div>
+          <div>
+            <label for="correo" class="block text-sm font-medium text-slate-700">Correo</label>
+            <input id="correo" name="correo" type="email" required class="mt-2 block w-full rounded-lg border border-rose-200 bg-white px-4 py-2.5 shadow-sm focus:border-rose-400 focus:ring-rose-400" placeholder="tu@correo.com" />
+          </div>
+          <div>
+            <label for="mensaje" class="block text-sm font-medium text-slate-700">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required class="mt-2 block w-full rounded-lg border border-rose-200 bg-white px-4 py-2.5 shadow-sm focus:border-rose-400 focus:ring-rose-400" placeholder="Escribe tu mensaje..."></textarea>
+          </div>
+          <div>
+            <button type="submit" class="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-rose-500 to-violet-500 px-6 py-3 text-white font-medium shadow-sm hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-rose-300">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-rose-100 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-center text-sm text-slate-500">© 2025 Beauty Glam - Todos los derechos reservados</p>
+      </div>
+    </footer>
+
+    <script>
+      const menuBtn = document.getElementById('menuBtn');
+      const mobileNav = document.getElementById('mobile-nav');
+      if (menuBtn && mobileNav) {
+        menuBtn.addEventListener('click', () => {
+          const isOpen = !mobileNav.classList.contains('hidden');
+          mobileNav.classList.toggle('hidden');
+          menuBtn.setAttribute('aria-expanded', String(!isOpen));
+        });
+      }
+    </script>
+  </body>
+</html>
